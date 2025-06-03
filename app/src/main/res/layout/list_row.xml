@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        tools:ignore="TextSizeCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@android:mipmap/sym_def_app_icon"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/listChoreName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Chore Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/listAssignedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listChoreName"
+                android:layout_toRightOf="@id/imageView"
+                android:text="@string/AssignedBy"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/listAssignedTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listAssignedBy"
+                android:layout_toRightOf="@id/imageView"
+                android:text="@string/Assignedto"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/listDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:text="date: 12 April, 2025"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <Button
+                android:id="@+id/listDeleteButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@id/listChoreName"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_toRightOf="@id/listEditButton"
+                android:background="@android:drawable/ic_delete"
+                tools:ignore="RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/listEditButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@id/listDate"
+                android:layout_alignBottom="@id/listChoreName"
+                android:layout_marginStart="59dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:drawable/ic_menu_edit"
+                tools:ignore="RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

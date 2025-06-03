@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChoreApp</string>
+    <string name="EnterChore">Enter a Chore...</string>
+    <string name="AssignedBy">Assigned By...</string>
+    <string name="Assignedto">Assigned To...</string>
+    <string name="imageDescription">Icon of a chore</string>
+    <string name="menu_title">Add Chore</string>
+</resources>
