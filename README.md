@@ -1,6 +1,7 @@
 📋 Chore App – README
 🧹 Overview
-Chore App is an Android application designed to help users manage and assign household chores. Users can create, view, edit, and delete chores, along with specifying who assigned and who is responsible for completing them. The app uses a local SQLite database to store chore data persistently.
+Chore App is an Android application designed to help users manage and assign household chores. Users can create, view, edit, and delete chores, specifying who assigned them and who is responsible for completing them. The app uses a local SQLite database to store chore data persistently.
+---------------------------------------------------------------------------------------------------------
 
 🚀 Features
 ✅ Add new chores with:
@@ -23,6 +24,8 @@ Assigned To
 
 🧪 Basic logging for debugging chore details
 
+--------------------------------------------------------------------------------------------------------
+
 🛠️ Technologies Used
 Kotlin (Android)
 
@@ -33,6 +36,8 @@ RecyclerView for chore list display
 AlertDialog for chore input popups
 
 Custom Adapter to bind chore data to views
+
+---------------------------------------------------------------------------------------------------------
 
 🧑‍💻 Code Structure
 ChoreListActivity.kt: Main activity displaying the list of chores.
@@ -47,8 +52,12 @@ popup.xml: Layout for the chore input dialog.
 
 list_row.xml: Layout for each individual chore in the list.
 
+---------------------------------------------------------------------------------------------------------
+
 📸 UI Preview (Optional)
 Add screenshots of the popup dialog, list display, etc.
+
+---------------------------------------------------------------------------------------------------------
 
 📦 Setup Instructions
 Clone the repository:
@@ -56,10 +65,12 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/chore-app.git
+git clone https://github.com/kingstrybe1/chore-app.git
 Open the project in Android Studio.
 
 Build and run the app on an emulator or Android device.
+
+---------------------------------------------------------------------------------------------------------
 
 📌 Notes
 The app currently uses local storage only (no remote/cloud sync).
